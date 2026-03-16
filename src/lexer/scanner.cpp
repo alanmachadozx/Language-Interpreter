@@ -15,10 +15,19 @@ void Scanner::addToken(TokenType type){
     tokens.push_back(Token{type, text, line});
 }
 
-std::vector<Token> Scanner::scanToken(){
+std::vector<Token>Scanner::scanTokens(){
     while(!finished()){
         start = current;
 
-        scanToken();
+        scanSingleToken();
     }
+}
+
+void Scanner::scanSingleToken(){
+    char c = advance();
+    
+    switch(c){
+    case '+': addToken(TokenType::PLUS);
+    }
+    
 }

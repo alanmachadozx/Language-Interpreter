@@ -10,7 +10,7 @@ class Scanner{
 public:
 Scanner(std::string source);
 
-std::vector<Token> scanToken();
+std::vector<Token> scanTokens();
 
 private:
 std::string source;
@@ -23,6 +23,7 @@ int line = 1; //Linha atual
 bool finished(); 
 char advance();
 void addToken(TokenType type);
+void scanSingleToken();
 };
 
 #endif
