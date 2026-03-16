@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/lexer/scanner.hpp
+string
+-
+vector
+-
+lexer/token.hpp
+../include/lexer/lexer/token.hpp
+
+../include/lexer/token.hpp
+string
+-
+
+/home/Alan/Documentos/Language-Interpreter/src/lexer/scanner.cpp
+lexer/scanner.hpp
+/home/Alan/Documentos/Language-Interpreter/src/lexer/lexer/scanner.hpp
+
