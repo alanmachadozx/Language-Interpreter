@@ -5,10 +5,10 @@
 #include <vector>
 #include "token.hpp"
 
-class Source{
+class Scanner{
 
 public:
-Source(std::string source);
+Scanner(std::string source);
 
 std::vector<Token> scanToken();
 
