@@ -3,7 +3,8 @@
  
 #include <string>
 #include <vector>
-#include "token.hpp"
+#include "lexer/token.hpp"
+
 
 class Scanner{
 
@@ -24,6 +25,8 @@ bool finished();
 char advance();
 void addToken(TokenType type);
 void scanSingleToken();
+void isNumber();
+
 };
 
 #endif

@@ -10,5 +10,5 @@ include_directories(include)
 # Adiciona os arquivos fonte
 add_executable(meu_itp 
     src/main.cpp 
-    src/Scanner.cpp
+    src/lexer/scanner.cpp
 )

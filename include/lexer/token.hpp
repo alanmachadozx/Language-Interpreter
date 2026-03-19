@@ -4,7 +4,26 @@
 #include <string>
 
 enum class TokenType{
-    PLUS
+    PLUS,
+    NUMBER,
+    STAR,
+    SLASH,
+    SUB,
+    EQ,
+    LPAREN,
+    RPAREN,
+    LT,
+    LTEQ,
+    GT,
+    GTEQ,
+    EQEQ,
+    PLUSEQ,
+    SUBEQ,
+    STAREQ,
+    SLASHEQ,
+    DOT,
+    LBRACE,
+    RBRACE,
 };
 
 struct Token{
