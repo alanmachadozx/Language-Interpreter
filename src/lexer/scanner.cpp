@@ -37,9 +37,10 @@ void Scanner::scanSingleToken(){
     char c = advance();
     
     if(c == '+'){
-        if(source[current ++] == '='){
+        if(source[current++] == '='){
             addToken(TokenType::PLUSEQ);
         } else{
+            current--;
             addToken(TokenType::PLUS);
         }
     }
@@ -48,6 +49,7 @@ void Scanner::scanSingleToken(){
         if(source[current++] == '='){
             addToken(TokenType::STAREQ);
         } else{
+            current--;
             addToken(TokenType::STAR);
         }
     };
@@ -55,6 +57,7 @@ void Scanner::scanSingleToken(){
         if(source[current++] == '='){
             addToken(TokenType::SLASHEQ);
         } else{
+            current--;
             addToken(TokenType::SLASH);
         }
     
@@ -63,6 +66,7 @@ void Scanner::scanSingleToken(){
         if(source[current++] == '='){
             addToken(TokenType::SUBEQ);
         } else{
+            current--;
             addToken(TokenType::SUB);
         }
     }
@@ -70,6 +74,7 @@ void Scanner::scanSingleToken(){
         if(source[current++] == '='){
             addToken(TokenType::EQEQ);
         } else{
+            current--;
             addToken(TokenType::EQ);
         }
     }
@@ -81,6 +86,7 @@ void Scanner::scanSingleToken(){
         if(source[current++] == '='){
             addToken(TokenType::GTEQ);
         } else{
+            current--;
             addToken(TokenType::GT);
         }
     }
@@ -89,6 +95,7 @@ void Scanner::scanSingleToken(){
         if(source[current++] == '='){
             addToken(TokenType::LTEQ);
         } else{
+            current--;
             addToken(TokenType::LT);
         }
     }
