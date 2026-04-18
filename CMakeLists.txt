@@ -1,14 +1,15 @@
 cmake_minimum_required(VERSION 3.10)
 project(Language-Interpreter)
 
-# Define o padrão do C++ (C++17 é ótimo para começar)
-set(CMAKE_CXX_STANDARD 17)
-
-# Inclui a pasta de cabeçalhos
-include_directories(include)
-
-# Adiciona os arquivos fonte
-add_executable(meu_itp 
+# 1. Primeiro você cria o alvo (adicione todos os seus arquivos .cpp aqui)
+add_executable(Language-Interpreter 
     src/main.cpp 
-    src/lexer/scanner.cpp
+    src/lexer/scanner.cpp 
+    src/lexer/mod.cpp
 )
+
+# 2. Depois você diz onde estão os headers para ESSE alvo
+target_include_directories(Language-Interpreter PUBLIC include)
+
+# 3. Habilita a geração do arquivo para o Zed
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)

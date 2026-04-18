@@ -1,0 +1,3 @@
+/home/alan/Documentos/Language-Interpreter/CMakeFiles/Language-Interpreter.dir
+/home/alan/Documentos/Language-Interpreter/CMakeFiles/edit_cache.dir
+/home/alan/Documentos/Language-Interpreter/CMakeFiles/rebuild_cache.dir

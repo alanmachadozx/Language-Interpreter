@@ -1,6 +1,6 @@
 #include "lexer/scanner.hpp"
 #include <cctype>
-#include <algorithm>
+
 
 Scanner::Scanner(std::string source) : source(source) {}
 

@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/alan/Documentos/Language-Interpreter",
+  "command": "/usr/bin/c++  -I/home/alan/Documentos/Language-Interpreter/include  -o CMakeFiles/Language-Interpreter.dir/src/main.cpp.o -c /home/alan/Documentos/Language-Interpreter/src/main.cpp",
+  "file": "/home/alan/Documentos/Language-Interpreter/src/main.cpp",
+  "output": "CMakeFiles/Language-Interpreter.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/alan/Documentos/Language-Interpreter",
+  "command": "/usr/bin/c++  -I/home/alan/Documentos/Language-Interpreter/include  -o CMakeFiles/Language-Interpreter.dir/src/lexer/scanner.cpp.o -c /home/alan/Documentos/Language-Interpreter/src/lexer/scanner.cpp",
+  "file": "/home/alan/Documentos/Language-Interpreter/src/lexer/scanner.cpp",
+  "output": "CMakeFiles/Language-Interpreter.dir/src/lexer/scanner.cpp.o"
+},
+{
+  "directory": "/home/alan/Documentos/Language-Interpreter",
+  "command": "/usr/bin/c++  -I/home/alan/Documentos/Language-Interpreter/include  -o CMakeFiles/Language-Interpreter.dir/src/lexer/mod.cpp.o -c /home/alan/Documentos/Language-Interpreter/src/lexer/mod.cpp",
+  "file": "/home/alan/Documentos/Language-Interpreter/src/lexer/mod.cpp",
+  "output": "CMakeFiles/Language-Interpreter.dir/src/lexer/mod.cpp.o"
+}
+]
