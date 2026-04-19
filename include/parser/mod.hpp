@@ -13,5 +13,7 @@ class Parser{
   Token peek(){
       return tokens[current];
   }
-
+  bool isEnd(){
+      return peek().type == TokenType::ENDL;
+  }
 };

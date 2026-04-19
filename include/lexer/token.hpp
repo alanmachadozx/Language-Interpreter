@@ -24,6 +24,7 @@ enum class TokenType{
     DOT,
     LBRACE,
     RBRACE,
+    ENDL,
 };
 
 struct Token{

@@ -1,4 +1,5 @@
 #include "lexer/scanner.hpp"
+#include "lexer/token.hpp"
 #include <cctype>
 
 
@@ -30,6 +31,7 @@ std::vector<Token>Scanner::scanTokens(){
 
         scanSingleToken();      
     }
+    addToken(TokenType::ENDL);
     return tokens;
 }
 
