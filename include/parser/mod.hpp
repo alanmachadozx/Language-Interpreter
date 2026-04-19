@@ -23,4 +23,12 @@ class Parser{
       if (isEnd()) return false;
       return peek().type == type;
   }
+  template<typename... Args >
+  bool match(Args... types){
+       if ((check(types) ||...)){
+           advance();
+          return true;
+       }
+       return false;
+  }
 };
