@@ -1,13 +1,16 @@
+#ifndef MOD_HPP
+#define MOD_HPP
 #include "lexer/token.hpp"
 #include <vector>
+#include "parser/expr.hpp"
 
 class Parser{  
+  public:
+  Parser(std::vector<Token> tokens) : tokens(tokens){};
+
   private:
   std::vector<Token> tokens;
   int current = 0;
-  
-  public:
-  Parser(std::vector<Token> tokens) : tokens(tokens){}
   
   Token peek(){
       return tokens[current];
@@ -23,6 +26,9 @@ class Parser{
       if (isEnd()) return false;
       return peek().type == type;
   }
+  Token previous(){
+      return tokens[current - 1];
+  }
   template<typename... Args >
   bool match(Args... types){
        if ((check(types) ||...)){
@@ -31,4 +37,8 @@ class Parser{
        }
        return false;
   }
+  
+  Expr* expression();//rule of least precedence(PLUS and SUB)
 };
+
+#endif
