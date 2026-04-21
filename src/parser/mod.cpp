@@ -30,3 +30,11 @@ Expr* Parser::factor(){
     return expr; 
 }
 
+Expr* Parser::unary(){
+    if(match(TokenType::SUB)){
+        Expr* right = unary();
+        Token operatorToken = Parser::previous();
+        return new Unary(operatorToken, right);
+    }
+    return primary();
+}

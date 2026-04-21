@@ -16,5 +16,11 @@ class Binary: public Expr{
     
     Binary(Expr*l, Token o, Expr*r) : left(l), op(o), right(r) {}
 };
-
+class Unary: public Expr{
+    public:
+    Token op;
+    Expr*right;
+    
+    Unary(Token o, Expr*r) : op(o), right(r) {}
+};
 #endif

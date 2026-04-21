@@ -40,7 +40,7 @@ class Parser{
   
   Expr* expression();//rule of least precedence(PLUS and SUB)
   Expr* factor();//STAR and SLASH
-  Expr* unary();//MINUS and BANG
+  Expr* unary();//SUB and BANG
 };
 
 #endif
