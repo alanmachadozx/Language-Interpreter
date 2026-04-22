@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/Language-Interpreter.dir/link.d "CMakeFiles/Language-Interpreter.dir/src/main.cpp.o" "CMakeFiles/Language-Interpreter.dir/src/lexer/scanner.cpp.o" "CMakeFiles/Language-Interpreter.dir/src/lexer/mod.cpp.o" -o Language-Interpreter

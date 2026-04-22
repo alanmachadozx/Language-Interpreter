@@ -1,7 +1,9 @@
 #ifndef TOKEN_HPP
 #define TOKEN_HPP
-
+#include <variant>
 #include <string>
+
+using LiteralType = std::variant<double, std::string, bool, std::nullptr_t>;
 
 enum class TokenType{
     PLUS,
@@ -31,6 +33,7 @@ struct Token{
     TokenType type;
     std::string lexeme; //std::string It's the data type (the tool that allows you to store text).
     int line;
+    LiteralType literal;
 };
 
 #endif

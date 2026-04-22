@@ -13,8 +13,8 @@
 },
 {
   "directory": "/home/alan/Documentos/Language-Interpreter",
-  "command": "/usr/bin/c++  -I/home/alan/Documentos/Language-Interpreter/include  -o CMakeFiles/Language-Interpreter.dir/src/lexer/mod.cpp.o -c /home/alan/Documentos/Language-Interpreter/src/lexer/mod.cpp",
-  "file": "/home/alan/Documentos/Language-Interpreter/src/lexer/mod.cpp",
-  "output": "CMakeFiles/Language-Interpreter.dir/src/lexer/mod.cpp.o"
+  "command": "/usr/bin/c++  -I/home/alan/Documentos/Language-Interpreter/include  -o CMakeFiles/Language-Interpreter.dir/src/parser/mod.cpp.o -c /home/alan/Documentos/Language-Interpreter/src/parser/mod.cpp",
+  "file": "/home/alan/Documentos/Language-Interpreter/src/parser/mod.cpp",
+  "output": "CMakeFiles/Language-Interpreter.dir/src/parser/mod.cpp.o"
 }
 ]

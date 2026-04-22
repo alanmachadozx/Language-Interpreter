@@ -23,6 +23,7 @@ int line = 1;
 bool finished(); 
 char advance();
 void addToken(TokenType type);
+void addToken(TokenType type, std::variant<double, std::string, bool, std::nullptr_t> literal);
 void scanSingleToken();
 void isNumber();
 

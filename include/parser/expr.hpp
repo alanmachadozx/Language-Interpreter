@@ -23,4 +23,10 @@ class Unary: public Expr{
     
     Unary(Token o, Expr*r) : op(o), right(r) {}
 };
+class Literal: public Expr{
+    public:
+    LiteralType litType;
+    
+    Literal(LiteralType c) : litType(c) {}
+};
 #endif

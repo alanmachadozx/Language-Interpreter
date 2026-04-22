@@ -129,30 +129,6 @@ Language-Interpreter/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Language-Interpreter.dir/build.make CMakeFiles/Language-Interpreter.dir/build
 .PHONY : Language-Interpreter/fast
 
-src/lexer/mod.o: src/lexer/mod.cpp.o
-.PHONY : src/lexer/mod.o
-
-# target to build an object file
-src/lexer/mod.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Language-Interpreter.dir/build.make CMakeFiles/Language-Interpreter.dir/src/lexer/mod.cpp.o
-.PHONY : src/lexer/mod.cpp.o
-
-src/lexer/mod.i: src/lexer/mod.cpp.i
-.PHONY : src/lexer/mod.i
-
-# target to preprocess a source file
-src/lexer/mod.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Language-Interpreter.dir/build.make CMakeFiles/Language-Interpreter.dir/src/lexer/mod.cpp.i
-.PHONY : src/lexer/mod.cpp.i
-
-src/lexer/mod.s: src/lexer/mod.cpp.s
-.PHONY : src/lexer/mod.s
-
-# target to generate assembly for a file
-src/lexer/mod.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Language-Interpreter.dir/build.make CMakeFiles/Language-Interpreter.dir/src/lexer/mod.cpp.s
-.PHONY : src/lexer/mod.cpp.s
-
 src/lexer/scanner.o: src/lexer/scanner.cpp.o
 .PHONY : src/lexer/scanner.o
 
@@ -201,6 +177,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Language-Interpreter.dir/build.make CMakeFiles/Language-Interpreter.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/parser/mod.o: src/parser/mod.cpp.o
+.PHONY : src/parser/mod.o
+
+# target to build an object file
+src/parser/mod.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Language-Interpreter.dir/build.make CMakeFiles/Language-Interpreter.dir/src/parser/mod.cpp.o
+.PHONY : src/parser/mod.cpp.o
+
+src/parser/mod.i: src/parser/mod.cpp.i
+.PHONY : src/parser/mod.i
+
+# target to preprocess a source file
+src/parser/mod.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Language-Interpreter.dir/build.make CMakeFiles/Language-Interpreter.dir/src/parser/mod.cpp.i
+.PHONY : src/parser/mod.cpp.i
+
+src/parser/mod.s: src/parser/mod.cpp.s
+.PHONY : src/parser/mod.s
+
+# target to generate assembly for a file
+src/parser/mod.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Language-Interpreter.dir/build.make CMakeFiles/Language-Interpreter.dir/src/parser/mod.cpp.s
+.PHONY : src/parser/mod.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -210,15 +210,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Language-Interpreter"
-	@echo "... src/lexer/mod.o"
-	@echo "... src/lexer/mod.i"
-	@echo "... src/lexer/mod.s"
 	@echo "... src/lexer/scanner.o"
 	@echo "... src/lexer/scanner.i"
 	@echo "... src/lexer/scanner.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/parser/mod.o"
+	@echo "... src/parser/mod.i"
+	@echo "... src/parser/mod.s"
 .PHONY : help
 
 

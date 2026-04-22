@@ -3,9 +3,9 @@ project(Language-Interpreter)
 
 # 1. Primeiro você cria o alvo (adicione todos os seus arquivos .cpp aqui)
 add_executable(Language-Interpreter 
-    src/main.cpp 
+    src/main.cpp
     src/lexer/scanner.cpp 
-    src/lexer/mod.cpp
+    src/parser/mod.cpp
 )
 
 # 2. Depois você diz onde estão os headers para ESSE alvo

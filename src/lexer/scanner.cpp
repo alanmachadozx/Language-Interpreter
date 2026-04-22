@@ -13,16 +13,27 @@ char Scanner::advance(){
     return source[current++];
 }
 //Adds a type to a token.
-void Scanner::addToken(TokenType type){
+void Scanner::addToken(TokenType type, std::variant<double, std::string, bool, std::nullptr_t> literal){
     std::string text = source.substr(start, current - start);
-    tokens.push_back(Token{type, text, line});
+    tokens.push_back(Token{type, text, line, literal});
+}
+void Scanner::addToken(TokenType type) {
+    addToken(type, nullptr); 
 }
 
 void Scanner::isNumber(){
-    while(std::isdigit(source[current])){
-    current++;
+    while(std::isdigit(source[current])){    
+        current++;
     }
-    addToken(TokenType::NUMBER);
+    if(source[current] == '.' && std::isdigit(source[current + 1])){
+        current++;
+        while (std::isdigit(source[current])) {
+            current++;
+        }
+    }
+    std::string text = source.substr(start, current - start);
+    double value = std::stod(text);
+    addToken(TokenType::NUMBER, value);
 }
 
 std::vector<Token>Scanner::scanTokens(){

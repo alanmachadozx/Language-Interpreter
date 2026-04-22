@@ -4,6 +4,7 @@
 #include <vector>
 #include "parser/expr.hpp"
 
+void parserFunc();
 class Parser{  
   public:
   Parser(std::vector<Token> tokens) : tokens(tokens){};
@@ -41,6 +42,7 @@ class Parser{
   Expr* expression();//rule of least precedence(PLUS and SUB)
   Expr* factor();//STAR and SLASH
   Expr* unary();//SUB and BANG
+  Expr* primary();//NUMBER, STRING, FALSE, TRUE, NIL and ()
 };
 
 #endif

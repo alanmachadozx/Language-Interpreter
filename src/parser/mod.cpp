@@ -1,9 +1,10 @@
 #include "parser/mod.hpp"
 #include "lexer/token.hpp"
 #include "parser/expr.hpp"
+#include <string>
 #include <vector>
 
-int main() {
+void parserFuncs() {
   std::vector<Token> tokens;
   Parser parser(tokens);
 }
@@ -37,4 +38,10 @@ Expr* Parser::unary(){
         return new Unary(operatorToken, right);
     }
     return primary();
+}
+
+Expr* Parser::primary(){
+    if (match(TokenType::NUMBER)){
+        return new Literal(previous().literal);
+    }
 }
