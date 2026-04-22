@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named meu_itp
+# Target rules for targets named Language-Interpreter
 
 # Build rule for target.
-meu_itp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 meu_itp
-.PHONY : meu_itp
+Language-Interpreter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Language-Interpreter
+.PHONY : Language-Interpreter
 
 # fast build rule for target.
-meu_itp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_itp.dir/build.make CMakeFiles/meu_itp.dir/build
-.PHONY : meu_itp/fast
+Language-Interpreter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Language-Interpreter.dir/build.make CMakeFiles/Language-Interpreter.dir/build
+.PHONY : Language-Interpreter/fast
 
 src/lexer/scanner.o: src/lexer/scanner.cpp.o
 .PHONY : src/lexer/scanner.o
 
 # target to build an object file
 src/lexer/scanner.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_itp.dir/build.make CMakeFiles/meu_itp.dir/src/lexer/scanner.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Language-Interpreter.dir/build.make CMakeFiles/Language-Interpreter.dir/src/lexer/scanner.cpp.o
 .PHONY : src/lexer/scanner.cpp.o
 
 src/lexer/scanner.i: src/lexer/scanner.cpp.i
@@ -142,7 +142,7 @@ src/lexer/scanner.i: src/lexer/scanner.cpp.i
 
 # target to preprocess a source file
 src/lexer/scanner.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_itp.dir/build.make CMakeFiles/meu_itp.dir/src/lexer/scanner.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Language-Interpreter.dir/build.make CMakeFiles/Language-Interpreter.dir/src/lexer/scanner.cpp.i
 .PHONY : src/lexer/scanner.cpp.i
 
 src/lexer/scanner.s: src/lexer/scanner.cpp.s
@@ -150,7 +150,7 @@ src/lexer/scanner.s: src/lexer/scanner.cpp.s
 
 # target to generate assembly for a file
 src/lexer/scanner.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_itp.dir/build.make CMakeFiles/meu_itp.dir/src/lexer/scanner.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Language-Interpreter.dir/build.make CMakeFiles/Language-Interpreter.dir/src/lexer/scanner.cpp.s
 .PHONY : src/lexer/scanner.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -158,7 +158,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_itp.dir/build.make CMakeFiles/meu_itp.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Language-Interpreter.dir/build.make CMakeFiles/Language-Interpreter.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -166,7 +166,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_itp.dir/build.make CMakeFiles/meu_itp.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Language-Interpreter.dir/build.make CMakeFiles/Language-Interpreter.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -174,8 +174,32 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/meu_itp.dir/build.make CMakeFiles/meu_itp.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Language-Interpreter.dir/build.make CMakeFiles/Language-Interpreter.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/parser/mod.o: src/parser/mod.cpp.o
+.PHONY : src/parser/mod.o
+
+# target to build an object file
+src/parser/mod.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Language-Interpreter.dir/build.make CMakeFiles/Language-Interpreter.dir/src/parser/mod.cpp.o
+.PHONY : src/parser/mod.cpp.o
+
+src/parser/mod.i: src/parser/mod.cpp.i
+.PHONY : src/parser/mod.i
+
+# target to preprocess a source file
+src/parser/mod.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Language-Interpreter.dir/build.make CMakeFiles/Language-Interpreter.dir/src/parser/mod.cpp.i
+.PHONY : src/parser/mod.cpp.i
+
+src/parser/mod.s: src/parser/mod.cpp.s
+.PHONY : src/parser/mod.s
+
+# target to generate assembly for a file
+src/parser/mod.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Language-Interpreter.dir/build.make CMakeFiles/Language-Interpreter.dir/src/parser/mod.cpp.s
+.PHONY : src/parser/mod.cpp.s
 
 # Help Target
 help:
@@ -185,13 +209,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... meu_itp"
+	@echo "... Language-Interpreter"
 	@echo "... src/lexer/scanner.o"
 	@echo "... src/lexer/scanner.i"
 	@echo "... src/lexer/scanner.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/parser/mod.o"
+	@echo "... src/parser/mod.i"
+	@echo "... src/parser/mod.s"
 .PHONY : help
 
 

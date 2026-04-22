@@ -1,3 +1,3 @@
-/home/alan/Documentos/Language-Interpreter/build/CMakeFiles/meu_itp.dir
+/home/alan/Documentos/Language-Interpreter/build/CMakeFiles/Language-Interpreter.dir
 /home/alan/Documentos/Language-Interpreter/build/CMakeFiles/edit_cache.dir
 /home/alan/Documentos/Language-Interpreter/build/CMakeFiles/rebuild_cache.dir

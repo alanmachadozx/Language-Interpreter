@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/meu_itp.dir/link.d CMakeFiles/meu_itp.dir/src/main.cpp.o CMakeFiles/meu_itp.dir/src/lexer/scanner.cpp.o -o meu_itp
