@@ -44,4 +44,9 @@ Expr* Parser::primary(){
     if (match(TokenType::NUMBER)){
         return new Literal(previous().literal);
     }
+    if (match(TokenType::LPAREN)){
+        Expr* content = expression();
+        consume(TokenType::RPAREN, "Expect ')' after expression");
+        return new Grouping(content);
+    }
 }

@@ -1,0 +1,184 @@
+{
+	"cmake" : 
+	{
+		"generator" : 
+		{
+			"multiConfig" : false,
+			"name" : "Unix Makefiles"
+		},
+		"paths" : 
+		{
+			"cmake" : "/usr/bin/cmake",
+			"cpack" : "/usr/bin/cpack",
+			"ctest" : "/usr/bin/ctest",
+			"root" : "/usr/share/cmake"
+		},
+		"version" : 
+		{
+			"isDirty" : false,
+			"major" : 4,
+			"minor" : 3,
+			"patch" : 1,
+			"string" : "4.3.1",
+			"suffix" : ""
+		}
+	},
+	"objects" : 
+	[
+		{
+			"jsonFile" : "codemodel-v2-e2c3275b5f04c187f9c5.json",
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 10
+			}
+		},
+		{
+			"jsonFile" : "configureLog-v1-eac846989d6a41eeee3c.json",
+			"kind" : "configureLog",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		},
+		{
+			"jsonFile" : "cache-v2-83b0911912cb1c816cd2.json",
+			"kind" : "cache",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 0
+			}
+		},
+		{
+			"jsonFile" : "cmakeFiles-v1-ddcd27941ff9087ddc7d.json",
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 1
+			}
+		},
+		{
+			"jsonFile" : "toolchains-v1-350b0a0c35bbc5691cae.json",
+			"kind" : "toolchains",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 1
+			}
+		}
+	],
+	"reply" : 
+	{
+		"client-neocmake" : 
+		{
+			"query.json" : 
+			{
+				"requests" : 
+				[
+					{
+						"kind" : "codemodel",
+						"version" : 
+						[
+							{
+								"major" : 2,
+								"minor" : 10
+							}
+						]
+					},
+					{
+						"kind" : "configureLog",
+						"version" : 
+						[
+							{
+								"major" : 1,
+								"minor" : 0
+							}
+						]
+					},
+					{
+						"kind" : "cache",
+						"version" : 
+						[
+							{
+								"major" : 2,
+								"minor" : 0
+							}
+						]
+					},
+					{
+						"kind" : "cmakeFiles",
+						"version" : 
+						[
+							{
+								"major" : 1,
+								"minor" : 1
+							}
+						]
+					},
+					{
+						"kind" : "toolchains",
+						"version" : 
+						[
+							{
+								"major" : 1,
+								"minor" : 1
+							}
+						]
+					}
+				],
+				"responses" : 
+				[
+					{
+						"jsonFile" : "codemodel-v2-e2c3275b5f04c187f9c5.json",
+						"kind" : "codemodel",
+						"version" : 
+						{
+							"major" : 2,
+							"minor" : 10
+						}
+					},
+					{
+						"jsonFile" : "configureLog-v1-eac846989d6a41eeee3c.json",
+						"kind" : "configureLog",
+						"version" : 
+						{
+							"major" : 1,
+							"minor" : 0
+						}
+					},
+					{
+						"jsonFile" : "cache-v2-83b0911912cb1c816cd2.json",
+						"kind" : "cache",
+						"version" : 
+						{
+							"major" : 2,
+							"minor" : 0
+						}
+					},
+					{
+						"jsonFile" : "cmakeFiles-v1-ddcd27941ff9087ddc7d.json",
+						"kind" : "cmakeFiles",
+						"version" : 
+						{
+							"major" : 1,
+							"minor" : 1
+						}
+					},
+					{
+						"jsonFile" : "toolchains-v1-350b0a0c35bbc5691cae.json",
+						"kind" : "toolchains",
+						"version" : 
+						{
+							"major" : 1,
+							"minor" : 1
+						}
+					}
+				]
+			}
+		}
+	}
+}

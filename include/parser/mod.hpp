@@ -1,18 +1,20 @@
 #ifndef MOD_HPP
 #define MOD_HPP
 #include "lexer/token.hpp"
+#include <stdexcept>
+#include <string>
 #include <vector>
 #include "parser/expr.hpp"
 
 void parserFunc();
-class Parser{  
+class Parser{
   public:
   Parser(std::vector<Token> tokens) : tokens(tokens){};
 
   private:
   std::vector<Token> tokens;
   int current = 0;
-  
+
   Token peek(){
       return tokens[current];
   }
@@ -38,7 +40,11 @@ class Parser{
        }
        return false;
   }
-  
+  Token consume(TokenType type, std::string Mensagerror){
+       if(check(type)) return advance();
+    throw std::runtime_error(Mensagerror);
+  }
+
   Expr* expression();//rule of least precedence(PLUS and SUB)
   Expr* factor();//STAR and SLASH
   Expr* unary();//SUB and BANG

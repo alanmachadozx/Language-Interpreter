@@ -109,4 +109,9 @@ CMakeFiles/Language-Interpreter.dir/src/lexer/scanner.cpp.o: \
  /usr/include/c++/15.2.1/bits/stl_vector.h \
  /usr/include/c++/15.2.1/bits/stl_bvector.h \
  /usr/include/c++/15.2.1/bits/vector.tcc \
- /home/alan/Documentos/Language-Interpreter/include/lexer/token.hpp
+ /home/alan/Documentos/Language-Interpreter/include/lexer/token.hpp \
+ /usr/include/c++/15.2.1/variant \
+ /usr/include/c++/15.2.1/bits/enable_special_members.h \
+ /usr/include/c++/15.2.1/bits/monostate.h \
+ /usr/include/c++/15.2.1/bits/parse_numbers.h \
+ /usr/include/c++/15.2.1/ext/aligned_buffer.h

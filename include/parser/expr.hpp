@@ -29,4 +29,11 @@ class Literal: public Expr{
     
     Literal(LiteralType c) : litType(c) {}
 };
+class Grouping: public Expr{
+    public:
+    Expr* group;
+    
+    Grouping(Expr* g) : group(g) {}
+};
+
 #endif
