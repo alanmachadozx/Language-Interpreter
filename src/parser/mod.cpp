@@ -1,12 +1,35 @@
 #include "parser/mod.hpp"
 #include "lexer/token.hpp"
 #include "parser/expr.hpp"
+#include <stdexcept>
 #include <string>
 #include <vector>
 
 void parserFuncs() {
   std::vector<Token> tokens;
   Parser parser(tokens);
+}
+
+Expr* Parser::equality(){
+    Expr* expr = comparison();
+    
+    while (match(TokenType::EQEQ)){
+        Expr* right = comparison();
+        Token operatorToken = Parser::previous();
+        expr = new Binary(expr, operatorToken, right);
+    }
+    return expr;
+}
+
+Expr* Parser::comparison(){
+    Expr* expr = expression();
+    
+    while (match(TokenType::GT, TokenType::GTEQ, TokenType::LT, TokenType::LTEQ)){
+        Expr* right = expression();
+        Token operatorToken = Parser::previous();
+        expr = new Binary(expr, operatorToken, right);
+    }
+    return expr;
 }
 
 Expr* Parser::expression(){
@@ -49,4 +72,5 @@ Expr* Parser::primary(){
         consume(TokenType::RPAREN, "Expect ')' after expression");
         return new Grouping(content);
     }
+    throw std::runtime_error("Expect expression");
 }

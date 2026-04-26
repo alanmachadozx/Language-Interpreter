@@ -67,6 +67,7 @@ CMakeFiles/Language-Interpreter.dir/src/lexer/scanner.cpp.o: /home/alan/Document
   /usr/include/c++/15.2.1/bits/concept_check.h \
   /usr/include/c++/15.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/15.2.1/bits/cxxabi_forced.h \
+  /usr/include/c++/15.2.1/bits/enable_special_members.h \
   /usr/include/c++/15.2.1/bits/exception.h \
   /usr/include/c++/15.2.1/bits/exception_defines.h \
   /usr/include/c++/15.2.1/bits/functexcept.h \
@@ -76,9 +77,11 @@ CMakeFiles/Language-Interpreter.dir/src/lexer/scanner.cpp.o: /home/alan/Document
   /usr/include/c++/15.2.1/bits/localefwd.h \
   /usr/include/c++/15.2.1/bits/memory_resource.h \
   /usr/include/c++/15.2.1/bits/memoryfwd.h \
+  /usr/include/c++/15.2.1/bits/monostate.h \
   /usr/include/c++/15.2.1/bits/move.h \
   /usr/include/c++/15.2.1/bits/new_allocator.h \
   /usr/include/c++/15.2.1/bits/ostream_insert.h \
+  /usr/include/c++/15.2.1/bits/parse_numbers.h \
   /usr/include/c++/15.2.1/bits/postypes.h \
   /usr/include/c++/15.2.1/bits/predefined_ops.h \
   /usr/include/c++/15.2.1/bits/ptr_traits.h \
@@ -113,6 +116,7 @@ CMakeFiles/Language-Interpreter.dir/src/lexer/scanner.cpp.o: /home/alan/Document
   /usr/include/c++/15.2.1/cwchar \
   /usr/include/c++/15.2.1/debug/assertions.h \
   /usr/include/c++/15.2.1/debug/debug.h \
+  /usr/include/c++/15.2.1/ext/aligned_buffer.h \
   /usr/include/c++/15.2.1/ext/alloc_traits.h \
   /usr/include/c++/15.2.1/ext/numeric_traits.h \
   /usr/include/c++/15.2.1/ext/string_conversions.h \
@@ -125,6 +129,7 @@ CMakeFiles/Language-Interpreter.dir/src/lexer/scanner.cpp.o: /home/alan/Document
   /usr/include/c++/15.2.1/string_view \
   /usr/include/c++/15.2.1/tuple \
   /usr/include/c++/15.2.1/type_traits \
+  /usr/include/c++/15.2.1/variant \
   /usr/include/c++/15.2.1/vector \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -239,6 +244,7 @@ CMakeFiles/Language-Interpreter.dir/src/main.cpp.o: /home/alan/Documentos/Langua
   /usr/include/c++/15.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/15.2.1/bits/cxxabi_forced.h \
   /usr/include/c++/15.2.1/bits/cxxabi_init_exception.h \
+  /usr/include/c++/15.2.1/bits/enable_special_members.h \
   /usr/include/c++/15.2.1/bits/exception.h \
   /usr/include/c++/15.2.1/bits/exception_defines.h \
   /usr/include/c++/15.2.1/bits/exception_ptr.h \
@@ -256,12 +262,14 @@ CMakeFiles/Language-Interpreter.dir/src/main.cpp.o: /home/alan/Documentos/Langua
   /usr/include/c++/15.2.1/bits/localefwd.h \
   /usr/include/c++/15.2.1/bits/memory_resource.h \
   /usr/include/c++/15.2.1/bits/memoryfwd.h \
+  /usr/include/c++/15.2.1/bits/monostate.h \
   /usr/include/c++/15.2.1/bits/move.h \
   /usr/include/c++/15.2.1/bits/nested_exception.h \
   /usr/include/c++/15.2.1/bits/new_allocator.h \
   /usr/include/c++/15.2.1/bits/ostream.h \
   /usr/include/c++/15.2.1/bits/ostream.tcc \
   /usr/include/c++/15.2.1/bits/ostream_insert.h \
+  /usr/include/c++/15.2.1/bits/parse_numbers.h \
   /usr/include/c++/15.2.1/bits/postypes.h \
   /usr/include/c++/15.2.1/bits/predefined_ops.h \
   /usr/include/c++/15.2.1/bits/ptr_traits.h \
@@ -301,6 +309,7 @@ CMakeFiles/Language-Interpreter.dir/src/main.cpp.o: /home/alan/Documentos/Langua
   /usr/include/c++/15.2.1/debug/assertions.h \
   /usr/include/c++/15.2.1/debug/debug.h \
   /usr/include/c++/15.2.1/exception \
+  /usr/include/c++/15.2.1/ext/aligned_buffer.h \
   /usr/include/c++/15.2.1/ext/alloc_traits.h \
   /usr/include/c++/15.2.1/ext/atomicity.h \
   /usr/include/c++/15.2.1/ext/numeric_traits.h \
@@ -324,6 +333,7 @@ CMakeFiles/Language-Interpreter.dir/src/main.cpp.o: /home/alan/Documentos/Langua
   /usr/include/c++/15.2.1/tuple \
   /usr/include/c++/15.2.1/type_traits \
   /usr/include/c++/15.2.1/typeinfo \
+  /usr/include/c++/15.2.1/variant \
   /usr/include/c++/15.2.1/vector \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
@@ -433,8 +443,11 @@ CMakeFiles/Language-Interpreter.dir/src/parser/mod.cpp.o: /home/alan/Documentos/
   /usr/include/c++/15.2.1/bits/concept_check.h \
   /usr/include/c++/15.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/15.2.1/bits/cxxabi_forced.h \
+  /usr/include/c++/15.2.1/bits/cxxabi_init_exception.h \
+  /usr/include/c++/15.2.1/bits/enable_special_members.h \
   /usr/include/c++/15.2.1/bits/exception.h \
   /usr/include/c++/15.2.1/bits/exception_defines.h \
+  /usr/include/c++/15.2.1/bits/exception_ptr.h \
   /usr/include/c++/15.2.1/bits/functexcept.h \
   /usr/include/c++/15.2.1/bits/functional_hash.h \
   /usr/include/c++/15.2.1/bits/hash_bytes.h \
@@ -442,9 +455,12 @@ CMakeFiles/Language-Interpreter.dir/src/parser/mod.cpp.o: /home/alan/Documentos/
   /usr/include/c++/15.2.1/bits/localefwd.h \
   /usr/include/c++/15.2.1/bits/memory_resource.h \
   /usr/include/c++/15.2.1/bits/memoryfwd.h \
+  /usr/include/c++/15.2.1/bits/monostate.h \
   /usr/include/c++/15.2.1/bits/move.h \
+  /usr/include/c++/15.2.1/bits/nested_exception.h \
   /usr/include/c++/15.2.1/bits/new_allocator.h \
   /usr/include/c++/15.2.1/bits/ostream_insert.h \
+  /usr/include/c++/15.2.1/bits/parse_numbers.h \
   /usr/include/c++/15.2.1/bits/postypes.h \
   /usr/include/c++/15.2.1/bits/predefined_ops.h \
   /usr/include/c++/15.2.1/bits/ptr_traits.h \
@@ -479,6 +495,8 @@ CMakeFiles/Language-Interpreter.dir/src/parser/mod.cpp.o: /home/alan/Documentos/
   /usr/include/c++/15.2.1/cwchar \
   /usr/include/c++/15.2.1/debug/assertions.h \
   /usr/include/c++/15.2.1/debug/debug.h \
+  /usr/include/c++/15.2.1/exception \
+  /usr/include/c++/15.2.1/ext/aligned_buffer.h \
   /usr/include/c++/15.2.1/ext/alloc_traits.h \
   /usr/include/c++/15.2.1/ext/numeric_traits.h \
   /usr/include/c++/15.2.1/ext/string_conversions.h \
@@ -487,10 +505,13 @@ CMakeFiles/Language-Interpreter.dir/src/parser/mod.cpp.o: /home/alan/Documentos/
   /usr/include/c++/15.2.1/iosfwd \
   /usr/include/c++/15.2.1/new \
   /usr/include/c++/15.2.1/pstl/pstl_config.h \
+  /usr/include/c++/15.2.1/stdexcept \
   /usr/include/c++/15.2.1/string \
   /usr/include/c++/15.2.1/string_view \
   /usr/include/c++/15.2.1/tuple \
   /usr/include/c++/15.2.1/type_traits \
+  /usr/include/c++/15.2.1/typeinfo \
+  /usr/include/c++/15.2.1/variant \
   /usr/include/c++/15.2.1/vector \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -653,6 +674,10 @@ CMakeFiles/Language-Interpreter.dir/src/parser/mod.cpp.o:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h:
 
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
+
+/usr/include/c++/15.2.1/variant:
+
 /usr/include/c++/15.2.1/bits/allocator.h:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
@@ -667,6 +692,10 @@ CMakeFiles/Language-Interpreter.dir/src/parser/mod.cpp.o:
 
 /usr/include/bits/types/timer_t.h:
 
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
+
+/usr/include/bits/types/time_t.h:
+
 /usr/include/bits/types/struct_itimerspec.h:
 
 /usr/include/bits/struct_rwlock.h:
@@ -679,9 +708,13 @@ CMakeFiles/Language-Interpreter.dir/src/parser/mod.cpp.o:
 
 /usr/include/c++/15.2.1/backward/binders.h:
 
-/usr/include/bits/types/struct_FILE.h:
+/usr/include/c++/15.2.1/stdexcept:
 
-/usr/include/bits/types/locale_t.h:
+/usr/include/c++/15.2.1/vector:
+
+/usr/include/c++/15.2.1/bits/enable_special_members.h:
+
+/usr/include/bits/types/struct_FILE.h:
 
 /usr/lib/crti.o:
 
@@ -797,15 +830,15 @@ CMakeFiles/Language-Interpreter.dir/src/parser/mod.cpp.o:
 
 /usr/include/bits/long-double.h:
 
+/usr/include/bits/types/locale_t.h:
+
+/usr/include/c++/15.2.1/bits/parse_numbers.h:
+
 /usr/include/gnu/stubs.h:
 
 /usr/include/bits/pthreadtypes-arch.h:
 
 /usr/include/bits/floatn.h:
-
-/usr/include/bits/types/time_t.h:
-
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
 
 /usr/include/c++/15.2.1/bits/exception_ptr.h:
 
@@ -859,8 +892,6 @@ CMakeFiles/Language-Interpreter.dir/src/main.cpp.o:
 
 /usr/include/c++/15.2.1/bits/memory_resource.h:
 
-/usr/include/c++/15.2.1/bits/concept_check.h:
-
 /usr/include/c++/15.2.1/bits/version.h:
 
 /usr/include/c++/15.2.1/bits/cxxabi_forced.h:
@@ -873,7 +904,13 @@ CMakeFiles/Language-Interpreter.dir/src/main.cpp.o:
 
 /usr/include/c++/15.2.1/bits/functexcept.h:
 
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
+/usr/include/c++/15.2.1/bits/concept_check.h:
+
+/usr/include/c++/15.2.1/bits/monostate.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/c++/15.2.1/bits/std_abs.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h:
 
@@ -898,10 +935,6 @@ CMakeFiles/Language-Interpreter.dir/src/main.cpp.o:
 /usr/include/bits/types/error_t.h:
 
 /usr/include/c++/15.2.1/bits/requires_hosted.h:
-
-/usr/include/gnu/stubs-64.h:
-
-/usr/include/c++/15.2.1/bits/std_abs.h:
 
 /home/alan/Documentos/Language-Interpreter/include/parser/mod.hpp:
 
@@ -955,6 +988,8 @@ CMakeFiles/Language-Interpreter.dir/src/main.cpp.o:
 
 /usr/include/c++/15.2.1/bits/utility.h:
 
+/usr/include/c++/15.2.1/ext/aligned_buffer.h:
+
 /usr/include/c++/15.2.1/clocale:
 
 /usr/include/wchar.h:
@@ -974,6 +1009,14 @@ CMakeFiles/Language-Interpreter.dir/src/main.cpp.o:
 /usr/include/c++/15.2.1/bits/memoryfwd.h:
 
 /usr/include/c++/15.2.1/cwchar:
+
+CMakeFiles/Language-Interpreter.dir/src/lexer/scanner.cpp.o:
+
+/usr/include/c++/15.2.1/type_traits:
+
+/usr/include/bits/thread-shared-types.h:
+
+/usr/include/c++/15.2.1/debug/debug.h:
 
 /usr/include/c++/15.2.1/ext/alloc_traits.h:
 
@@ -1000,15 +1043,3 @@ CMakeFiles/Language-Interpreter.dir/src/main.cpp.o:
 /usr/include/bits/types/clockid_t.h:
 
 /usr/include/c++/15.2.1/tuple:
-
-CMakeFiles/Language-Interpreter.dir/src/lexer/scanner.cpp.o:
-
-/usr/include/bits/thread-shared-types.h:
-
-/usr/include/c++/15.2.1/debug/debug.h:
-
-/usr/include/c++/15.2.1/type_traits:
-
-/usr/include/c++/15.2.1/stdexcept:
-
-/usr/include/c++/15.2.1/vector:

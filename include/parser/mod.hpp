@@ -44,7 +44,9 @@ class Parser{
        if(check(type)) return advance();
     throw std::runtime_error(Mensagerror);
   }
-
+  
+  Expr* comparison(); // >, >=, < and <=
+  Expr* equality(); // == and !==
   Expr* expression();//rule of least precedence(PLUS and SUB)
   Expr* factor();//STAR and SLASH
   Expr* unary();//SUB and BANG
