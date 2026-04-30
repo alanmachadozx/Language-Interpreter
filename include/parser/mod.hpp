@@ -10,7 +10,7 @@ void parserFunc();
 class Parser{
   public:
   Parser(std::vector<Token> tokens) : tokens(tokens){};
-
+  
   private:
   std::vector<Token> tokens;
   int current = 0;

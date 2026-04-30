@@ -1,5 +1,6 @@
 #include "parser/mod.hpp"
 #include "lexer/token.hpp"
+#include "parser/error.hpp"
 #include "parser/expr.hpp"
 #include <stdexcept>
 #include <string>
@@ -64,6 +65,7 @@ Expr* Parser::unary(){
 }
 
 Expr* Parser::primary(){
+    try{
     if (match(TokenType::NUMBER)){
         return new Literal(previous().literal);
     }
@@ -72,5 +74,9 @@ Expr* Parser::primary(){
         consume(TokenType::RPAREN, "Expect ')' after expression");
         return new Grouping(content);
     }
-    throw std::runtime_error("Expect expression");
+    throw ParserError(x);
+    }
+    catch(ParserError &x){
+        
+    }
 }
