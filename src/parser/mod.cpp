@@ -2,13 +2,17 @@
 #include "lexer/token.hpp"
 #include "parser/error.hpp"
 #include "parser/expr.hpp"
-#include <stdexcept>
-#include <string>
+#include <iostream>
 #include <vector>
 
 void parserFuncs() {
+  try{
   std::vector<Token> tokens;
   Parser parser(tokens);
+  }
+  catch (ParserError &e){
+      std::cerr << "Exception caught: " << e.what();
+  }
 }
 
 Expr* Parser::equality(){
@@ -65,18 +69,15 @@ Expr* Parser::unary(){
 }
 
 Expr* Parser::primary(){
-    try{
-    if (match(TokenType::NUMBER)){
+    
+    if (match(TokenType::NUMBER, TokenType::STRING)){
         return new Literal(previous().literal);
     }
+   
     if (match(TokenType::LPAREN)){
         Expr* content = expression();
         consume(TokenType::RPAREN, "Expect ')' after expression");
         return new Grouping(content);
     }
-    throw ParserError(x);
-    }
-    catch(ParserError &x){
-        
-    }
+    throw ParserError();
 }

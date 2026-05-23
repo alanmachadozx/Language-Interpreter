@@ -48,7 +48,14 @@ std::vector<Token>Scanner::scanTokens(){
 
 void Scanner::scanSingleToken(){
     char c = advance();
-    
+    if(c== '"'){
+        while(source[current++] != '"'){
+            current++;
+        }
+
+        std::string text = source.substr(start, current - start);
+        addToken(TokenType::STRING, text);
+    }
     if(c == '+'){
         if(source[current++] == '='){
             addToken(TokenType::PLUSEQ);

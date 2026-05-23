@@ -5,7 +5,9 @@
 
 using LiteralType = std::variant<double, std::string, bool, std::nullptr_t>;
 
+//Tokens types
 enum class TokenType{
+    STRING,
     PLUS,
     NUMBER,
     STAR,
