@@ -1,0 +1,36 @@
+# C/C++ / Make / CMake build artifacts
+build/
+bin/
+obj/
+cmake-build-*/
+
+# Compiled objects and libraries
+*.o
+*.obj
+*.so
+*.a
+*.exe
+*.out
+
+# CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile.user
+
+# Qt / QML caches (in case Qt used)
+*.qmlcache
+moc_*
+qrc_*
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs / temp
+*.log
+tmp/
